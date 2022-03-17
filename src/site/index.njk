@@ -5,11 +5,13 @@
     {%include "components/pageheader.njk"%}
   </head>
   <body>
-    {%include "components/notegrowthhistory.njk"%}
-    <div class="content">
-      {%- for garden in collections.gardenEntry -%}
-        {{garden.templateContent | safe }}
-      {%- endfor -%}
+    <div class="main-content">
+      {%include "components/notegrowthhistory.njk"%}
+      <div class="content">
+        {%- for garden in collections.gardenEntry -%}
+          {{garden.templateContent | safe }}
+        {%- endfor -%}
+      </div>
     </div>
   </body>
 </html>
