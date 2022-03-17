@@ -1,9 +1,8 @@
 @import url("variables.css");
 body {
-    background: var(--backgroundStars), linear-gradient(var(--colorDark), var(--colorDarkest)) no-repeat;
-    background-color: var(--colorDarkest);
+    background-color: hsl(273, 16%, 20%);
     font-family: var(--text);
-    color: var(--colorLight);
+    color: hsl(283, 34%, 80%);
 
     p{
         font-size: 190%;
