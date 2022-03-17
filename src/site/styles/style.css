@@ -1,0 +1,298 @@
+/* Nicholas Ingram 3/5/22 */
+
+@import url("variables.css");
+
+/* fixing background repeating */
+html{
+    height:100%;
+}
+
+body{
+    background: var(--backgroundStars), linear-gradient(var(--colorDark), var(--colorDarkest)) no-repeat;
+    background-color: var(--colorDarkest);
+    font-family: var(--text);
+    color: var(--colorLight);
+}
+
+p{
+    font-size: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height:150%;
+}
+
+footer{
+    text-align: center;
+    font-size: 150%;
+    padding-bottom: 5%;
+}
+
+a{
+    color: var(--colorLink)
+}
+
+header{
+    font-size: 160%;
+    text-align: center;
+    color:var(--colorHighlight);
+}
+
+
+h1{
+    font-family: var(--header);
+    font-size: 4.0em;
+    color: var(--colorLight);
+    margin:0 0 5% 0;
+}
+
+h2, h2, h3, h4{
+    font-family: var(--subHeader);
+    text-align: center;
+    font-size: 300%;
+}
+
+nav{
+    font-family: var(--text);
+    font-weight: 700;
+}
+
+code{
+    font-family: var(--code);
+    background-color: var(--colorCodeBG);
+    color: var(--colorCodeFG);
+    font-size: 65%;
+    padding:0.2em;
+    border-radius: 0.3em;
+}
+
+main ul{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 160%;
+    list-style: none;
+    font-family: var(--text);
+}
+
+main ul li::before{
+    color: var(--colorLink);
+    font-family: "Courier New";
+    content: var(--inline-star1);
+    font-weight: 900;
+    padding-right: 0.3em;
+}
+
+dl{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 150%;
+}
+
+dt{
+    font-family: var(--text);
+    font-size: 1.6em;
+    font-weight: 800;
+    padding-top: 1.5em;
+}
+
+dt::before{
+    content: var(--inline-star1);
+    padding-right: 0.3em;
+    vertical-align: -15%;
+}
+
+dd{
+    padding-bottom: 0;
+    font-size: 140%;
+    line-height: 1.5em;
+}
+
+dd::before{
+    display: inline-block;
+    content: var(--inline-star2);
+
+    vertical-align: -15%;
+    font-size: 6em;
+    padding-right: 0.06em;
+}
+
+nav ul{
+    list-style: none;
+    padding:0;
+}
+
+nav li{
+    display: inline;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 5px 10px 5px 10px;
+    color: var(--colorCodeBG);
+    background-color: var(--colorCodeFG);
+    padding: 0 5px 0 5px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--colorCodeBG);
+    background-color: var(--colorHighlight2);
+}
+
+.skill-list li{
+    display: inline;
+    text-decoration: underline;
+    padding: 2%;
+    font-weight: 600;
+}
+
+.skill-list{
+    text-align: center;
+    font: var(--code);
+    vertical-align: middle;
+    background-color: var(--colorDarker);
+    border-radius: 100px;
+    margin: 5%;
+    padding: 5%;
+}
+
+.course-objectives{
+    font-weight: 900;
+}
+
+dd ol{
+    padding-left:3em;
+    list-style: none;
+    counter-reset: li;
+}
+
+dd li::before{
+    font-family: var(--header);
+    content: counter(li) ":";
+    color: var(--colorHighlight);
+    padding-right: 0.5em;
+}
+/* Manually increments numbers */
+dd li{
+    counter-increment: li;
+    padding-bottom: 0.3em;
+}
+
+.skill-list li::before{
+    content:none;
+}
+
+i .star::after{
+    background: var(--starIcon);
+}
+
+.highlight{
+    color:var(--colorHighlight);
+}
+
+.blue{
+    color:var(--colorCodeFG);
+    font-weight: 700;
+}
+
+.green{
+    color: var(--colorHighlight2)
+}
+
+.details{
+    font-size: 0.8em;
+    padding: 0.01em;
+    text-align: right;
+    font-family: var(--text);
+    font-weight: 600;
+}
+
+.rotate-center {
+    animation: rotate-center 15s linear infinite both;
+}
+
+.rotate-center-reverse {
+    animation: rotate-center-reverse 15s linear infinite both;
+}
+
+.details::before{
+    content: none;
+}
+
+.invisible {
+    display: none;
+}
+
+.heroImg{
+    background-image: var(--rotating-star);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+
+}
+
+.subList{
+    font-size: 70%;
+}
+
+.subList::before{
+    color:hsl(55, 63%, 89%);
+    font-family: "Courier New";
+    content:"-";
+    font-weight: 900;
+    padding-right: 0.3em;
+}
+
+#description{
+    display:none;
+}
+
+#author{
+    font-size: 70%;
+    font-family: var(--subHeader);
+    font-style: italic;
+}
+
+.main-content{
+    background-color: var(--colorDark);
+    margin-left: 20%;
+    margin-right: 20%;
+    border-width: 0.3em;
+    border-style: solid;
+    border-color: var(--colorLight);
+    border-radius: 2em;
+}
+
+#goldenRatio{
+    width: 20%;
+    height:auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+#logoDiv{
+    width:50%;
+    margin: auto;
+}
+
+
+
+.best-skills{
+    font-size: 3em;
+    color: var(--colorCodeFG);
+}
+
+.familiar-skills{
+    font-size: 2.5em;
+    color: var(--colorHighlight2);
+}
+
+.improving-skills{
+    font-size: 1.5em;
+    color: var(--colorHighlight);
+}
