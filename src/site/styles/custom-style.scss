@@ -41,7 +41,8 @@ body {
     }
     
     h2, h2, h3, h4{
-        font-family: var(--colorHighlight);
+        font-family: var(--header);
+        color: var(--colorLight);
         text-align: center;
         font-size: 300%;
     }
