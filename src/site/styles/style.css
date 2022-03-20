@@ -15,10 +15,12 @@ body{
 }
 
 p{
-    font-size: 100%;
+    font-size: 1em;
     margin-left: 10%;
     margin-right: 10%;
-    line-height:150%;
+    line-height:1.5em;
+    font-family: var(--text);
+    color: var(--colorLight);
 }
 
 footer{
